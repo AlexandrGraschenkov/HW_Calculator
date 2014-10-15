@@ -12,7 +12,7 @@
 
 - (int)sumA:(int)a andB:(int)b;
 - (int)divA:(int)a toB:(int)b;
-- (int)sumArray:(NSArray*)arr;
+- (int)sumArray:(NSArray*)arraaay;
 - (int)subtractSumFirstArray:(NSArray*)firstArr withSecondArr:(NSArray*)secondArr;
 
 @end
