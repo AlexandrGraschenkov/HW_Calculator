@@ -19,12 +19,12 @@
 }
 
 - (int)sumArray:(NSArray*)arr{
-    int sum = 0;
+    int summ = 0;
     
     for (NSNumber *num in arr)
-        sum += [num intValue];
+        summ += [num intValue];
     
-    return sum;
+    return summ;
 }
 
 - (int)subtractSumFirstArray:(NSArray*)firstArr withSecondArr:(NSArray*)secondArr{
