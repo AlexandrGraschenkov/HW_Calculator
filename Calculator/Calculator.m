@@ -7,7 +7,6 @@
 //
 
 #import "Calculator.h"
-#import "math.h"
 
 @implementation Calculator
  
@@ -31,13 +30,10 @@
 - (int)subtractSumFirstArray:(NSArray*)firstArr withSecondArr:(NSArray*)secondArr{
     int firstSumm = 0;
     int secondSumm = 0;
-    
     for (NSNumber *num in firstArr)
         firstSumm += [num intValue];
-    
     for (NSNumber *num in secondArr)
         secondSumm += [num intValue];
-    
-    return abs(firstSumm-secondSumm);
+    return firstSumm-secondSumm;
 }
 @end
