@@ -28,6 +28,12 @@
 }
 
 - (int)subtractSumFirstArray:(NSArray*)firstArr withSecondArr:(NSArray*)secondArr{
-    return (int)sumArray:(NSArray*)firstArr-(int)sumArray:(NSArray*)secondArr;
+   int firstSumm = 0;
+    int secondSumm = 0;
+    for (NSNumber *num in firstArr)
+        firstSumm += [num intValue];
+    for (NSNumber *num in secondArr)
+        secondSumm += [num intValue];
+    return firstSumm-secondSumm;
 }
 @end
