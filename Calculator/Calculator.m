@@ -15,6 +15,7 @@
 }
 - (int)divA:(int)a toB:(int)b; {
     if (b == 0) {
+        NSLog(@"%s", "error");
         return nil;
     } else {
         return a/b;
