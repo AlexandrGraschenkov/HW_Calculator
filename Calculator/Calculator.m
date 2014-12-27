@@ -10,4 +10,32 @@
 
 @implementation Calculator
 
+- (int)sumA:(int)a andB:(int)b{
+    return a+b;
+}
+
+- (int)divA:(int)a toB:(int)b{
+    return a/b;
+}
+
+- (int)sumArray:(NSArray*)arr{
+    int sum = 0;
+    for (NSNumber *i in arr){
+        sum += [i intValue];
+    }
+    return sum;
+}
+
+- (int)subtractSumFirstArray:(NSArray*)firstArr withSecondArr:(NSArray*)secondArr{
+    int sum1 = 0;
+    int sum2  = 0;
+    for (NSNumber *i in firstArr){
+        sum1 += [i intValue];
+    }
+    for (NSNumber *j in secondArr){
+        sum2 += [j intValue];
+    }
+    return sum1 - sum2;
+}
+
 @end
